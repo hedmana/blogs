@@ -41,7 +41,7 @@ const Blog = ({ blog, addLike, deleteBlog, user }) => {
   return (
     <div className="blog" style={blogStyle}>
       <div className="blogInfo">
-        {blog.title} {blog.author}
+        {blog.title}, {blog.author}
         <button id={blog.title + "-viewButton"} onClick={handleViewChange}>
           {buttonText}
         </button>
@@ -54,7 +54,6 @@ const Blog = ({ blog, addLike, deleteBlog, user }) => {
             like
           </button>
         </div>
-        <div>{blog.user.name}</div>
         <button
           style={buttonStyle}
           id={blog.title + "-removeButton"}
